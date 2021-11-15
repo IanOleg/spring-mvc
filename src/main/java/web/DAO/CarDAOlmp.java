@@ -16,11 +16,11 @@ public class CarDAOlmp implements CarDAO{
 
     {
         this.carsList = new ArrayList<Car>();
-        this.carsList.add(new Car("125","Nissan","gray"));
-        this.carsList.add(new Car("234","TOYOTA","red"));
-        this.carsList.add(new Car("456","BMW","black"));
-        this.carsList.add(new Car("009","AUDI","black"));
-        this.carsList.add(new Car("911","Subaru","white"));
+        this.carsList.add(new Car("1425","Nissan","gray"));
+        this.carsList.add(new Car("2344","TOYOTA","red"));
+        this.carsList.add(new Car("4566","BMW","black"));
+        this.carsList.add(new Car("0089","AUDI","black"));
+        this.carsList.add(new Car("9121","Subaru","white"));
     }
 
     public List<Car> getCarsList(Optional<Integer> count){

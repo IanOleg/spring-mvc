@@ -7,16 +7,16 @@
 </head>
 <body>
 <div>
-    <table>
+    <table align="center" border="1">
     <tr>
-        <th>State number</th>
+        <th>State num</th>
         <th>Model</th>
         <th>Color</th>
     </tr>
         <tr th:each="msg : ${messages}">
-            <td th:text="${msg.stateNumber}"></td>
-            <td th:text="${msg.model}"></td>
-            <td th:text="${msg.color}"></td>
+            <td align="center" th:text="${msg.stateNumber}"></td>
+            <td align="center" th:text="${msg.model}"></td>
+            <td align="center" th:text="${msg.color}"></td>
         </tr>
     </table>
 </div>
