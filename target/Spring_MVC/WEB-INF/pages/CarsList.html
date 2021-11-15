@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div>
+    <table>
+    <tr>
+        <th>State number</th>
+        <th>Model</th>
+        <th>Color</th>
+    </tr>
+        <tr th:each="msg : ${messages}">
+            <td th:text="${msg.stateNumber}"></td>
+            <td th:text="${msg.model}"></td>
+            <td th:text="${msg.color}"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
