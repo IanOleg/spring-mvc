@@ -14,11 +14,8 @@ import java.util.stream.Collectors;
 @Service
 public class CarServicelmp implements CarService {
 
-    CarDAO carDAO;
-
-    {
-        carDAO = new CarDAOlmp();
-    }
+    @Autowired
+    private CarDAO carDAO;
 
     public List<Car> getCarsList(Optional<Integer> count){
         return carDAO.getCarsList(count);
