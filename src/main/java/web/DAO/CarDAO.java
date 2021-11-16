@@ -1,7 +1,6 @@
 package web.DAO;
 
 import web.model.Car;
-
 import java.util.List;
 import java.util.Optional;
 
