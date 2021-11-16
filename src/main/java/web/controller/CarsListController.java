@@ -17,7 +17,7 @@ import java.util.Optional;
 public class CarsListController {
 
     @Autowired
-    CarService carService;
+    private CarService carService;
 
     @GetMapping(value = "/cars")
     public String printCarsList(@RequestParam(name = "count", required = false) Optional<Integer> count, ModelMap model) {
